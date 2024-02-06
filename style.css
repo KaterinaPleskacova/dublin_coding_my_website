@@ -1,0 +1,115 @@
+* {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+body {
+    background-color: #e6e2e2;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-text-dark: #08083a;
+    --primary-background-blue: #69e7d285;
+    --secondary-background-blue: #54c9ddab;
+}
+
+@keyframes colorChange {
+    0% {background-color: #f5ac46;}
+    50% {background-color: #c8ca42;}
+    100% {background-color: #f56946;}
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #69e7d285;
+    color: var(--primary-text-dark);
+    text-align: center;
+    padding: 1rem;
+}
+
+nav {
+    background-color: var(--secondary-background-blue);
+    padding: 0.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 0.5rem;
+    color: #fff;
+}
+
+nav a:hover {
+    color: var(--primary-text-dark);
+    text-decoration: underline;
+}
+
+main {
+   padding: 0.5rem;
+   display: table;
+}
+
+section {
+    padding-bottom: 0.5rem;
+}
+
+
+aside {
+    padding-top: 0.5rem;
+}
+
+footer {
+    background-color: var(--primary-background-blue);
+    text-align: center;
+    padding: 1rem;
+}
+
+#left {
+    width: 70%;
+    float: left;
+}
+
+#right {
+    width: 25%;
+    float: right;
+}
+
+.about h4 {
+    padding: 0.5rem;
+    background-color: #fff;
+    color: var(--primary-text-dark);
+    width: 10rem;
+    transition: width 0.5s ease-in-out;
+}
+
+.about h4:hover {
+    padding: 0.5rem;
+    background-color: #fff;
+    color: var(--primary-text-dark);
+    width: 11rem;
+    color: #fff;
+    background-color: var(--primary-text-dark);
+}
+
+.about p {
+    padding: 0.2rem;
+    background-color: var(--primary-background-blue);
+    color: var(--primary-text-dark);
+}
+
+.important p{
+    background-color: red;
+    color: #fff;
+    animation: colorChange 5s infinite;
+}
+
+.ad {
+    width: 100%;
+    margin-top: 1rem;;
+}
+
