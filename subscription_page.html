@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="subs-style.css">
+    <title>Subscription page</title>
+</head>
+<body>
+    <section>
+        <div class="header-bg">
+            <h3>Subscription Signup</h3>
+        </div>
+        <article>
+            <p>Signup to my weekly newsletter where we will follow a range of topics.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor animi voluptates vitae magnam ipsa ut odio, sed culpa in laboriosam, repudiandae dolorem accusantium maxime consequatur. Quisquam aut quis consectetur sit!
+            </p>
+        
+
+            <form action="subscription_page.html" method=""post>
+                <label for="name" class="my-label">Name</label>
+                <input type="text" name="name" id="name" class="my-input" tabindex="1" autofocus placeholder="enter your name">
+                <label for="email" class="my-label">Email</label>
+                <input type="email" name="email" id="email" class="my-input" tabindex="2"  placeholder="enter your email address">
+                <label for="password" class="my-label">Password</label>
+                <input type="password" name="password" id="password" class="my-input" tabindex="3"  placeholder="enter password">
+                <label for="phone-number" class="my-label">Phone number</label>
+                <input type="number" name="phone-number" id="phone-number" class="my-input" tabindex="4"  placeholder="enter your phone number">
+                
+                <hr>
+
+                <label for="upload-file" class="my-label">Upload a file</label>
+                <input type="file" name="upload-file" id="upload-file" class="file-input" tabindex="5">
+
+                <br>
+
+                <input type="checkbox" name="promo" id="promo" tabindex="6">
+                <label for="promo" class="promo-label">I want to receive promotional material</label>
+                <br>
+                <button>Submit</button>    
+            </form>
+        </article>
+    </section>
+</body>
+</html>
