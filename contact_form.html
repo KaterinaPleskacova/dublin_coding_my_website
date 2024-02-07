@@ -19,17 +19,51 @@
             <a href="#">About</a>
             <a href="#">Services</a>
             <a href="contact_form.html">Contact</a>
+            <a href="subscription_page.html">Subscription page</a>
         </nav>
         
         <main>
             <div id="left">
-                <form action="">
-                    <label for="name">Name</label>
-                    <input id="name" type="text" placeholder="full name">
-                    <label for="email">Email</label>
-                    <input id="email" type="email" placeholder="example@example.com">
-                    <label for="message">Message</label>
-                    <textarea name="message" id="message" cols="30" rows="10" placeholder="What would you like to tell us about?"></textarea>
+                <form action="contact_form.html" method="post">
+                    <fieldset>
+                        <legend>About you</legend>
+                        <label for="first-name" class="customLabel">First name <small>*</small></label>
+                        <input id="first-name" type="text" tabindex="1" class="customInput" autofocus placeholder="first name" required>
+
+                        <label for="last-name" class="customLabel">Last name</label>
+                        <input id="last-name" type="text" tabindex="2" class="customInput"  placeholder="last name">
+
+                        <label for="email" class="customLabel">Email <small>*</small></label>
+                        <input id="email" type="email" tabindex="3" class="customInput" placeholder="example@example.com" required>
+
+                        <label for="website" class="customLabel">Your website</label>
+                        <input id="website" type="url" tabindex="4" class="customInput" placeholder="www.example.com">
+                    </fieldset>
+
+                    <hr>
+
+                    <h3>How did you hear about me?</h3>
+
+                    <input type="radio" name="hear-about" id="hear-about-facebook" value="Facebook">
+                    <label for="hear-about-facebook">Facebook</label>
+
+                    <input type="radio" name="hear-about" id="hear-about-linkedin" value="LinkedIn">
+                    <label for="hear-about-linkedin">LinkedIn</label>
+
+                    <input type="radio" name="hear-about" id="hear-about-instagram" value="Instagram">
+                    <label for="hear-about-instagram">Instagram</label>
+
+                    <hr>
+                    <fieldset>
+                        <legend>Message</legend>
+                        <label for="subject" class="customLabel">Subject <small>*</small></label>
+                        <input type="text" id="subject" name="subject" class="customInput" required>
+                        
+
+                        <label for="message" class="customLabel">Message <small>*</small></label>
+                        <textarea name="message" id="message"  class="customInput" cols="30" rows="10" placeholder="What would you like to tell us about?"></textarea>
+                    </fieldset> 
+                    <button>Send</button>
                 </form>
             </div>
 
@@ -41,7 +75,11 @@
         </main>
 
         <footer>
-            email: <a href="mailto:">katerina.pleskacova91@gmail.com</a>
+            <ul>
+                <li>email: <a href="mailto:">katerina.pleskacova91@gmail.com</a></li>
+                <li><a href="http://linkedin.com" target="_blank">LinkedIn profile</a></li>
+            </ul>
+            
         </footer>
     </div>
 </body>

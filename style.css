@@ -27,8 +27,8 @@ body {
 }
 
 header {
-    background-color: #69e7d285;
-    color: var(--primary-text-dark);
+    background-image: url("pc.jpg");
+    color: #e6e2e2;
     text-align: center;
     padding: 1rem;
 }
@@ -72,6 +72,7 @@ footer {
 #left {
     width: 70%;
     float: left;
+    min-width: 25rem;
 }
 
 #right {
@@ -113,3 +114,47 @@ footer {
     margin-top: 1rem;;
 }
 
+ul {
+    list-style: none;
+}
+
+label small {
+    color: red;
+}
+
+form {
+    max-width: 40rem;
+    margin: 2rem auto;
+    padding: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem #08083a
+}
+
+.customLabel {
+    display: block;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+}
+
+.customInput {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: var(--primary-background-blue);
+    padding: 0.25rem;
+    margin-top: 1rem;
+    border: 1px solid var(--primary-text-dark);
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+fieldset {
+    border-radius: 0.75rem;
+    border: 1px solid #929596c5
+}
