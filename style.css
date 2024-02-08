@@ -28,6 +28,7 @@ body {
 
 header {
     background-image: url("pc.jpg");
+    background-repeat: no-repeat;
     color: #e6e2e2;
     text-align: center;
     padding: 1rem;
@@ -123,8 +124,8 @@ label small {
 }
 
 form {
-    max-width: 40rem;
-    margin: 2rem auto;
+    width: 30rem;
+    margin: 1rem auto;
     padding: 2rem;
     border: 1px solid #ccc;
     border-radius: 1rem;
